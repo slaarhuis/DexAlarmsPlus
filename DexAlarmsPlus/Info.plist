@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>DexAlarms+ needs Bluetooth access to connect to your Dexcom sensor and monitor your glucose levels.</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>DexAlarms+ needs Bluetooth access to connect to your Dexcom sensor and monitor your glucose levels.</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>bluetooth-central</string>
+	</array>
+</dict>
+</plist>

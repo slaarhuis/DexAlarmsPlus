@@ -1,0 +1,75 @@
+name: Bug Report
+description: File a bug report
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: input
+    id: ios-version
+    attributes:
+      label: iOS Version
+      description: What version of iOS are you running?
+      placeholder: e.g., iOS 18.0
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device
+      description: What device are you using?
+      placeholder: e.g., iPhone 15 Pro
+    validations:
+      required: true
+  - type: input
+    id: app-version
+    attributes:
+      label: App Version
+      description: What version of DexAlarms+ are you using?
+      placeholder: e.g., 1.0.0
+    validations:
+      required: true
+  - type: input
+    id: dexcom-model
+    attributes:
+      label: Dexcom Model
+      description: Which Dexcom sensor are you using?
+      placeholder: e.g., Dexcom One+
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what you see!
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction-steps
+    attributes:
+      label: Steps to reproduce
+      description: How can we reproduce this issue?
+      placeholder: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output if available.
+      render: shell
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](../CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
